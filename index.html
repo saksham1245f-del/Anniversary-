@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arun ❤️ Meenu | Anniversary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Poppins',sans-serif;background:linear-gradient(135deg,#ff758c,#ff7eb3);color:white;overflow-x:hidden}
+    section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px;text-align:center}
+    .container{max-width:900px;width:100%}
+    h1{font-size:3rem;animation:glow 2s infinite alternate}
+    h2{font-size:2rem;margin-bottom:15px}
+    p{font-size:1.1rem;line-height:1.8}
+    .btn{margin-top:25px;padding:12px 25px;border:none;border-radius:30px;background:white;color:#ff4081;font-size:1rem;cursor:pointer;transition:.3s}
+    .btn:hover{transform:scale(1.08);background:#ffeb3b}
+    .card{background:rgba(255,255,255,.12);border-radius:25px;padding:35px;backdrop-filter:blur(6px);box-shadow:0 15px 40px rgba(0,0,0,.35);animation:fadeUp 1.5s}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:20px}
+    .gallery img{width:100%;border-radius:15px;transition:.4s}
+    .gallery img:hover{transform:scale(1.08)}
+    footer{text-align:center;padding:40px 20px;font-size:1.1rem}
+    @keyframes glow{from{text-shadow:0 0 10px #fff,0 0 20px #ff4081}to{text-shadow:0 0 20px #fff,0 0 40px #ff4081}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body><audio id="music" loop>
+  <!-- Romantic Bollywood-style instrumental (Tum Mile vibe, copyright-safe) -->
+  <source src="https://cdn.pixabay.com/download/audio/2023/05/22/audio_5f5e8c9a0a.mp3?filename=romantic-indian-theme-146334.mp3" type="audio/mpeg">
+</audio><section>
+  <div class="container card">
+    <h1>अरुण ❤️ मीनू</h1>
+    <h2>शादी की सालगिरह की ढेर सारी शुभकामनाएँ</h2>
+    <p>आज का दिन सिर्फ एक तारीख नहीं, बल्कि आपके खूबसूरत प्यार का उत्सव है ✨</p>
+    <button class="btn" onclick="playMusic()">🎶 संगीत चलाएँ</button>
+  </div>
+</section><section>
+  <div class="container card">
+    <h2>आप दोनों की कहानी 💖</h2>
+    <p>आप दोनों का साथ हमें यह सिखाता है कि सच्चा रिश्ता समय के साथ और भी मजबूत होता जाता है। हर मुस्कान, हर त्याग और हर समझ आपके प्यार की गहराई को दिखाती है।</p>
+  </div>
+</section><section>
+  <div class="container card">
+    <h2>हमारी प्यारी यादें 📸</h2>
+    <p>हर तस्वीर में एक कहानी छुपी है, हर पल में ढेर सारी खुशियाँ ❤️</p>
+    <div class="gallery">
+      <img src="photo1.jpg">
+      <img src="photo2.jpg">
+      <img src="photo3.jpg">
+      <img src="photo4.jpg">
+      <img src="photo5.jpg">
+      <img src="photo6.jpg">
+    </div>
+    <p style="margin-top:15px;font-size:0.9rem">(इन नामों की जगह अपनी photos के exact नाम डाल देना)</p>
+  </div>
+</section><section>
+  <div class="container card">
+    <h2>दिल से संदेश 🥹</h2>
+    <p>मम्मी-पापा, आप दोनों हमारी पूरी दुनिया हैं। आपका प्यार, आपका साथ और आपकी मेहनत हमारे लिए सबसे बड़ा आशीर्वाद है। हम हमेशा आपके आभारी रहेंगे। शादी की सालगिरह की बहुत-बहुत शुभकामनाएँ 💕</p>
+  </div>
+</section><section>
+  <div class="container card">
+    <h2>हमारी दुआ 🤍</h2>
+    <p>ईश्वर से प्रार्थना है कि आपका दाम्पत्य जीवन सदा प्रेम, स्वास्थ्य और खुशियों से भरा रहे। आप दोनों यूँ ही मुस्कुराते रहें और हमेशा साथ चलते रहें ✨</p>
+  </div>
+</section><footer>
+  <p>आप दोनों की जोड़ी को हमारा नमन — हैप्पी एनिवर्सरी 🎉</p>
+</footer><!-- Floating flowers --><div class="flowers"></div><!-- Surprise popup --><div id="popup" class="popup">
+  <div class="popup-content">
+    <h2>सरप्राइज संदेश 💌</h2>
+    <p>मम्मी-पापा, आप दोनों का प्यार ही हमारी सबसे बड़ी ताकत है। हमेशा यूँ ही मुस्कुराते रहिए ❤️</p>
+    <button class="btn" onclick="closePopup()">बंद करें</button>
+  </div>
+</div><script>
+function playMusic(){
+  document.getElementById('music').play();
+}
+</script></body>
+</html>
